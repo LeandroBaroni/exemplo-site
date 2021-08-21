@@ -1,0 +1,130 @@
+/* Rodapé */
+
+footer.rodape {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    font-size: 0.6rem;
+    grid-area: footer;
+    background-color: #444;
+    color: rgb(232, 243, 75);
+}
+
+/* Cabeçalho */
+header.cabecalho{
+    display: flex;
+    justify-content:center;
+    font-size: 15px;
+    color: blue;
+}
+
+img.user{
+    padding-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+input.inputCabecalho {
+    background: url('../img/search-icon.svg');
+    background-position: 10px 10px;
+    padding-right: 3px;
+    padding: 4px;
+    text-align: right;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+
+div.divCabecalho{
+    text-align: center;
+}
+
+/* Corpo */
+
+body {
+    background-image: url('../img/reclame_banner.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /* display: flex; */
+}
+
+main.content {
+    /* background-color: #FFF; */
+    grid-area: content;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2); */
+}
+
+*{
+    box-sizing: border-box;
+}
+div.row{
+    display: flex;
+}
+
+span.formulario{
+    background-color: rgba(255, 255, 255, 0.2);
+    justify-content: right;
+    text-align: center;
+    /* column-width: 300%; */
+    /* flex: 30%; */
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.6);
+    /* box-sizing:border-box; */
+}
+
+div.formulario{
+    columns:auto;
+    color: blue;
+    font-weight: bolder;
+}
+
+span.reclame{
+    text-align: start;
+    flex: 50%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    color: #056734;
+    font-weight: bold;
+}
+
+button.whatsappArea{
+    background-color: green;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    background-repeat: no-repeat;
+}
+
+form.inputs{
+    margin: 10px;
+    border-radius: 20px;
+    size: 40px;
+    font-size: 1.2rem;
+}
+
+input.fm{
+    background-color: #e0e0e0;
+    padding-bottom: 5px;
+    padding: 3px;
+    margin: 3px;
+    color: #9a9a9a;
+    font-size: small;
+    border-top: #9a9a9a;
+    border-left: #9a9a9a;
+    border-right: #9a9a9a;
+    border-radius: 10px;
+}
+
+button.botao{
+    background-color: #94c11f;
+    color: #056734;
+}
