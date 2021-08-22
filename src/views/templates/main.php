@@ -14,22 +14,24 @@
                     <button class="whatsappArea"><img src="assets/img/whatsapp-brands.svg" width="15px"> CONVERSAR PELO WHATSAPP</button>
                     <form method="post" action="#" class="inputs" id="form_user">
                         <div class="inputs">
-                            <input class="fm" type="text" placeholder="Nome" id="txtName" name="txtName" size="35" required><br>
+                            <input class="fm" type="text" placeholder="Nome" id="txtName" name="txtName" size="35" required tabindex="1"><br>
                         </div>
                         <div class="inputs">
-                            <input class="fm" type="email" placeholder="E-mail"  id="txtEmail" name="txtEmail" size="35" required><br>
+                            <input class="fm" type="email" placeholder="E-mail"  id="txtEmail" name="txtEmail" size="35" required tabindex="2"><br>
                         </div>
                         <div class="inputs">
-                            <input class="fm" type="text" placeholder="Telefone" id="txtFone" name="txtFone" size="35" required><br>
+                            <input class="fm" type="text" placeholder="Telefone" id="txtFone" name="txtFone" size="35" required tabindex="3"><br>
                         </div>
                         <div class="inputs">
-                            <input class="fm" type="text" placeholder="Nome da empresa"  id="txtCompanyName" name="txtCompanyName" size="35" required><br>
+                            <input class="fm" type="text" placeholder="Nome da empresa"  id="txtCompanyName" name="txtCompanyName" size="35" required tabindex="4"><br>
                         </div>
-                        <div class="inputs" data_errormsg="">
-                            <input class="fm" type="text" placeholder="Data do ocorrido" id="txtData" name="txtData" size="35" required><br>
+                        <!-- <div class="inputs error" data-errormsg=""> -->
+                        <div class="inputs">
+                            <input class="fm" type="text" placeholder="Data do ocorrido" id="txtData" name="txtData" size="35" required tabindex="5"><br>
+                            <small>error message</small>
                         </div>
                         <div class="inputs">
-                            <input class="fm" type="text" placeholder="Explique para nós o que aconteceu" id="txtDetails" name="txtDetails" size="35" required>
+                            <input class="fm" type="text" placeholder="Explique para nós o que aconteceu" id="txtDetails" name="txtDetails" size="35" required tabindex="6">
                         </div>
                         <!-- <button class="botao" id="button_send" onclick="getValueData();" type="submit">ENVIAR</button> -->
                         <button class="botao" id="button_send" type="submit">ENVIAR</button>
