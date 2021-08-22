@@ -12,32 +12,31 @@
                 <div class="formulario">
                     <h4>CONTE O QUE ACONTECEU</h4>
                     <button class="whatsappArea"><img src="assets/img/whatsapp-brands.svg" width="15px"> CONVERSAR PELO WHATSAPP</button>
-                    <form method="post" action="#" class="inputs">
+                    <form method="post" action="#" class="inputs" id="form_user">
                         <div class="inputs">
-                            <input class="fm" type="text" placeholder="Nome" id="txtName" name="txtName" size="35" onclick="this.value = '' "><br>
-                            <input class="fm" type="email" placeholder="E-mail"  id="txtEmail" name="txtEmail" size="35" onclick="this.value = '' "><br>
-                            <input class="fm" type="text" placeholder="Telefone" id="txtFone" name="txtFone" size="35" onclick="this.value = '' "><br>
-                            <input class="fm" type="text" placeholder="Nome da empresa"  id="txtCompanyName" name="txtCompanyName" size="35" onclick="this.value = ''"><br>
-                            <input class="fm" type="text" placeholder="Data do ocorrido" id="txtData" name="txtData" size="35" onclick="this.value = '' "><br>
-                            <input class="fm" type="text" placeholder="Explique para nós o que aconteceu" id="txtDetails" name="txtDetails" size="35" onclick="this.value = '' ">
+                            <input class="fm" type="text" placeholder="Nome" id="txtName" name="txtName" size="35" required><br>
                         </div>
-                        <button class="botao" onclick="getValueData();" type="submit">ENVIAR</button>
+                        <div class="inputs">
+                            <input class="fm" type="email" placeholder="E-mail"  id="txtEmail" name="txtEmail" size="35" required><br>
+                        </div>
+                        <div class="inputs">
+                            <input class="fm" type="text" placeholder="Telefone" id="txtFone" name="txtFone" size="35" required><br>
+                        </div>
+                        <div class="inputs">
+                            <input class="fm" type="text" placeholder="Nome da empresa"  id="txtCompanyName" name="txtCompanyName" size="35" required><br>
+                        </div>
+                        <div class="inputs" data_errormsg="">
+                            <input class="fm" type="text" placeholder="Data do ocorrido" id="txtData" name="txtData" size="35" required><br>
+                        </div>
+                        <div class="inputs">
+                            <input class="fm" type="text" placeholder="Explique para nós o que aconteceu" id="txtDetails" name="txtDetails" size="35" required>
+                        </div>
+                        <!-- <button class="botao" id="button_send" onclick="getValueData();" type="submit">ENVIAR</button> -->
+                        <button class="botao" id="button_send" type="submit">ENVIAR</button>
                     </form>
                 </div>
             </span>
         </div>
     </main>
-    <script>
-        function getValueData(){
-            console.log(1);
-            var strData = document.getElementById('txtData');
-            var partesData = strData.split("/");
-            console.log(2);
-            var data = new Date(partesData[2], partesData[1] - 1, partesData[0]);
-            console.log(data);
-            if(data > new Date()){
-                alert("A data do ocorrido não pode ser maior que a data atual");
-            }
-        }
-    </script>
+    <script src="assets/js/app.js"></script>
 </body>

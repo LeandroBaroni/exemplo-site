@@ -53,7 +53,7 @@ main.content {
     /* background-color: #FFF; */
     grid-area: content;
     margin: 30px;
-    padding: 20px;
+    padding: 50px;
     border-radius: 5px;
     /* box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2); */
 }
@@ -127,4 +127,10 @@ input.fm{
 button.botao{
     background-color: #94c11f;
     color: #056734;
+}
+
+.error::after{
+    color: crimson;
+    font-size: 1rem;
+    content: attr(data_errormsg);
 }
