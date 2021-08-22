@@ -25,7 +25,6 @@
                         <div class="inputs">
                             <input class="fm" type="text" placeholder="Nome da empresa"  id="txtCompanyName" name="txtCompanyName" size="35" required tabindex="4"><br>
                         </div>
-                        <!-- <div class="inputs error" data-errormsg=""> -->
                         <div class="inputs">
                             <input class="fm" type="text" placeholder="Data do ocorrido" id="txtData" name="txtData" size="35" required tabindex="5"><br>
                             <small>error message</small>
@@ -33,7 +32,6 @@
                         <div class="inputs">
                             <input class="fm" type="text" placeholder="Explique para nós o que aconteceu" id="txtDetails" name="txtDetails" size="35" required tabindex="6">
                         </div>
-                        <!-- <button class="botao" id="button_send" onclick="getValueData();" type="submit">ENVIAR</button> -->
                         <button class="botao" id="button_send" type="submit">ENVIAR</button>
                     </form>
                 </div>
